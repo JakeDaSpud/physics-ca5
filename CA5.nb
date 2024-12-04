@@ -1,0 +1,87 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2649,         79]
+NotebookOptionsPosition[      2109,         63]
+NotebookOutlinePosition[      2512,         79]
+CellTagsIndexPosition[      2469,         76]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Jake", " ", 
+     RowBox[{"O", "'"}], "Reilly"}], " ", "|", " ", "D00256438"}], " ", 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Eoin", " ", "Hamill"}], "   ", "|", " ", "D00258444"}], " ", 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.942284127163875*^9, 3.9422841413338604`*^9}, {
+  3.942284176580432*^9, 3.9422841915074263`*^9}, {3.9422842670236244`*^9, 
+  3.9422842896484823`*^9}},ExpressionUUID->"2ca56bb1-cd72-49ad-9c41-\
+c22cfb1a5746"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Initial", " ", "Conditions", " ", "of", " ", "both", " ", "Circles"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Collision", " ", "Threshold"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Initial", " ", "Velocities"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", "Masses", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Normal", " ", "Surface", 
+    RowBox[{"(", "s", ")"}]}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.9422842921302357`*^9, 
+  3.9422843357605743`*^9}},ExpressionUUID->"bf3d243c-7c0e-4bf4-ae4e-\
+247cf65efe9d"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"RK4", " ", "Until", " ", "s", " ", "seconds", " ", 
+   RowBox[{"if", "/", "after"}], " ", "Collision"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.942284340508911*^9, 
+  3.942284359454708*^9}},ExpressionUUID->"765593fd-967a-4ac9-816c-\
+627974619140"]
+},
+WindowSize->{1280, 652},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"24decb04-5341-40b2-95eb-6009e6daeb60"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 552, 14, 49, "Input",ExpressionUUID->"2ca56bb1-cd72-49ad-9c41-c22cfb1a5746"],
+Cell[1113, 36, 690, 17, 105, "Input",ExpressionUUID->"bf3d243c-7c0e-4bf4-ae4e-247cf65efe9d"],
+Cell[1806, 55, 299, 6, 28, "Input",ExpressionUUID->"765593fd-967a-4ac9-816c-627974619140"]
+}
+]
+*)
+
