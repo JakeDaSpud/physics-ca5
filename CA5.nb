@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15748,        401]
-NotebookOptionsPosition[     15106,        384]
-NotebookOutlinePosition[     15509,        400]
-CellTagsIndexPosition[     15466,        397]
+NotebookDataLength[     18337,        457]
+NotebookOptionsPosition[     17693,        440]
+NotebookOutlinePosition[     18096,        456]
+CellTagsIndexPosition[     18053,        453]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -124,14 +124,41 @@ Cell[BoxData[
     RowBox[{"m", "/", "s"}], " ", "*)"}], "\[IndentingNewLine]", 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"mass", " ", "=", " ", "3.5"}], ";"}], " ", 
-   RowBox[{"(*", " ", "Kg", " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"mass", " ", "=", " ", "0.3"}], ";"}], " ", 
+   RowBox[{"(*", " ", "Kg", " ", "*)"}], "          ", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"|", " ", 
+      RowBox[{"Example", " ", "1"}]}], ":", " ", 
+     RowBox[{"0.3", " ", "|", " ", 
+      RowBox[{"Example", " ", "2"}]}], ":", " ", 
+     RowBox[{"x", " ", "|", " ", 
+      RowBox[{"Example", " ", "3"}]}], ":", " ", 
+     RowBox[{"x", " ", "|"}]}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"muStatic", " ", "=", " ", "1"}], ";"}], " ", 
-   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"muStatic", " ", "=", " ", "0.8"}], ";"}], " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], "   ", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"|", " ", 
+      RowBox[{"Example", " ", "1"}]}], ":", " ", 
+     RowBox[{"0.8", " ", "|", " ", 
+      RowBox[{"Example", " ", "2"}]}], ":", " ", 
+     RowBox[{"x", " ", "|", " ", 
+      RowBox[{"Example", " ", "3"}]}], ":", " ", 
+     RowBox[{"x", " ", "|"}]}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"muKinetic", " ", "=", " ", "0.8"}], ";"}], " ", 
-   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"muKinetic", " ", "=", " ", "0.3"}], ";"}], " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"|", " ", 
+      RowBox[{"Example", " ", "1"}]}], ":", " ", 
+     RowBox[{"0.3", " ", "|", " ", 
+      RowBox[{"Example", " ", "2"}]}], ":", " ", 
+     RowBox[{"x", " ", "|", " ", 
+      RowBox[{"Example", " ", "3"}]}], ":", " ", 
+     RowBox[{"x", " ", "|"}]}], " ", "*)"}], "\[IndentingNewLine]", 
    "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{"Simulation", " ", "Variables"}], " ", "*)"}], 
@@ -143,47 +170,22 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"normal", " ", "=", " ", 
      RowBox[{"{", 
-      RowBox[{"1", ",", " ", "1", ",", " ", "1"}], "}"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"-", "5"}], ",", " ", "4", ",", " ", "5"}], "}"}]}], ";"}], 
+   " ", 
    RowBox[{"(*", " ", 
-    RowBox[{"Simulation", " ", "Forces"}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"forceGravity", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", " ", "0", ",", " ", 
-       RowBox[{"-", "9.81"}]}], "}"}]}], ";"}], " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{"N", " ", "Newtons"}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"forceGravityPlane", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", " ", "0", ",", " ", "0"}], "}"}]}], ";"}], " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{"N", " ", "Newtons"}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"forceGravityNormal", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", " ", "0", ",", " ", "0"}], "}"}]}], ";"}], " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{"N", " ", "Newtons"}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"forceNormal", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", " ", "0", ",", " ", "0"}], "}"}]}], ";"}], " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{"N", " ", "Newtons"}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"forceFriction", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", " ", "0", ",", " ", "0"}], "}"}]}], ";"}], " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{"N", " ", "Newtons"}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"forceNet", " ", "=", " ", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", " ", "0", ",", " ", "0"}], "}"}]}], ";"}], " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{"N", " ", "Newtons"}], " ", "*)"}], 
+    RowBox[{
+     RowBox[{"|", " ", 
+      RowBox[{"Example", " ", "1"}]}], ":", " ", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", " ", "4", ",", " ", "5"}], "}"}], " ", "|", 
+      " ", 
+      RowBox[{"Example", " ", "2"}]}], ":", " ", 
+     RowBox[{"x", " ", "|", " ", 
+      RowBox[{"Example", " ", "3"}]}], ":", " ", 
+     RowBox[{"x", " ", "|"}]}], " ", "*)"}], 
    "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.9422842921302357`*^9, 3.9422843357605743`*^9}, {
    3.9422923955426216`*^9, 3.94229241525984*^9}, {3.9422925058710575`*^9, 
@@ -197,8 +199,10 @@ Cell[BoxData[
    3.9422942699056187`*^9}, {3.94229440082878*^9, 3.942294454991766*^9}, {
    3.9422945138925424`*^9, 3.9422945559246883`*^9}, {3.9422947813718505`*^9, 
    3.9422948256259823`*^9}, {3.9422958308098526`*^9, 3.942295840916519*^9}, {
-   3.9422964676903353`*^9, 
-   3.942296480125226*^9}},ExpressionUUID->"bf3d243c-7c0e-4bf4-ae4e-\
+   3.9422964676903353`*^9, 3.942296480125226*^9}, {3.9423139544211874`*^9, 
+   3.942313965143084*^9}, {3.9423142584048133`*^9, 3.9423143146306844`*^9}, {
+   3.942314382390319*^9, 
+   3.9423144115286474`*^9}},ExpressionUUID->"bf3d243c-7c0e-4bf4-ae4e-\
 247cf65efe9d"],
 
 Cell[BoxData[
@@ -209,29 +213,79 @@ Cell[BoxData[
   RowBox[{
    RowBox[{
     RowBox[{
-     RowBox[{"forceGravity", "[", "]"}], " ", ":="}], " ", ";"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"forceGravity", "[", 
+      RowBox[{"mass_", ",", " ", "forceGravity_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"mass", " ", "*", " ", "forceGravity"}]}], ";"}], " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-     RowBox[{"forceGravityPlane", "[", "]"}], " ", ":="}], " ", ";"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"forceGravityNormal", "[", 
+      RowBox[{"forceGravity_", ",", " ", "normal_"}], "]"}], " ", ":=", " ", 
+     RowBox[{
+      RowBox[{"Dot", "[", 
+       RowBox[{"forceGravity", ",", " ", 
+        RowBox[{"Normalize", "[", "normal", "]"}]}], "]"}], " ", "*", " ", 
+      RowBox[{"Normalize", "[", "normal", "]"}]}]}], ";"}], " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-     RowBox[{"forceGravityNormal", "[", "]"}], " ", ":="}], " ", ";"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"forceGravityPlane", "[", 
+      RowBox[{"forceGravity_", ",", " ", "forceGravityNormal_"}], "]"}], " ", 
+     ":=", " ", 
+     RowBox[{"forceGravity", " ", "-", " ", "forceGravityNormal"}]}], ";"}], 
+   " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-     RowBox[{"forceNormal", "[", "]"}], " ", ":="}], " ", ";"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"forceNormal", "[", "forceGravityNormal_", "]"}], " ", ":=", " ", 
+     RowBox[{"-", "forceGravityNormal"}]}], ";"}], " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-     RowBox[{"forceFriction", "[", "]"}], " ", ":="}], " ", ";"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"staticForceFriction", "[", 
+      RowBox[{"muStatic_", ",", " ", "forceNormal_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"muStatic", " ", "*", " ", 
+      RowBox[{"Normalize", "[", "forceNormal", "]"}]}]}], ";"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"upto", " ", "N"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-     RowBox[{"forceNet", "[", "]"}], " ", ":="}], " ", ";"}]}]}]], "Input",
- CellChangeTimes->{{3.942296947468793*^9, 
-  3.9422970469970617`*^9}},ExpressionUUID->"7df45ef7-7d3e-458e-9aaa-\
+     RowBox[{"kineticForceFriction", "[", 
+      RowBox[{
+      "muKinetic_", ",", " ", "forceGravityPlane_", ",", " ", 
+       "forceNormal_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"muKinetic", " ", "*", " ", 
+      RowBox[{"(", 
+       RowBox[{"-", 
+        RowBox[{"Normalize", "[", "forceGravityPlane", "]"}]}], ")"}]}]}], 
+    ";"}], " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"forceNet", "[", 
+      RowBox[{"forceGravityPlane_", ",", " ", "forceFriction_"}], "]"}], " ", 
+     ":=", " ", 
+     RowBox[{"forceGravityPlane", " ", "+", " ", "forceFriction"}]}], ";"}], 
+   " ", 
+   RowBox[{"(*", " ", "N", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"acceleration", "[", 
+      RowBox[{"forceNet_", ",", " ", "mass_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"forceNet", " ", "/", " ", "mass"}]}], ";"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"m", "/", 
+     RowBox[{"s", "^", "2"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.942296947468793*^9, 3.9422970469970617`*^9}, {
+  3.9423141830613956`*^9, 3.942314207167075*^9}, {3.9423144189272566`*^9, 
+  3.9423144311149197`*^9}, {3.9423145613723974`*^9, 3.942314594742117*^9}, {
+  3.9423146909845943`*^9, 3.9423147556445227`*^9}, {3.942315368895784*^9, 
+  3.94231539516708*^9}, {3.942316438890087*^9, 3.9423164658683066`*^9}, {
+  3.9423170484930463`*^9, 3.9423170953510566`*^9}, {3.9423171386225786`*^9, 
+  3.9423171593776913`*^9}, {3.942317336617961*^9, 3.9423173406407895`*^9}, {
+  3.9423223845022745`*^9, 3.9423224348829203`*^9}, {3.942322496833826*^9, 
+  3.942322580577695*^9}},ExpressionUUID->"7df45ef7-7d3e-458e-9aaa-\
 737983bfe292"],
 
 Cell[BoxData[
@@ -239,7 +293,7 @@ Cell[BoxData[
   RowBox[{"(*", " ", "RK4", " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"rkTime", " ", "=", " ", "1.7"}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"rkTime", " ", "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"rkTimestep", " ", "=", " ", "0.1"}], ";"}], 
    "\[IndentingNewLine]", 
@@ -256,7 +310,8 @@ Cell[BoxData[
         RowBox[{"p_", ",", " ", "v_"}], "}"}]}], "]"}], ":=", " ", 
      RowBox[{"Module", "[", "\[IndentingNewLine]", 
       RowBox[{"(*", " ", 
-       RowBox[{"Local", " ", "Varibles"}], " ", "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"Local", " ", "Variables"}], " ", "*)"}], 
+      "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"{", 
         RowBox[{
@@ -378,8 +433,9 @@ Cell[BoxData[
    3.942292783518505*^9, 3.942292787661338*^9}, {3.9422929633277636`*^9, 
    3.942292964822437*^9}, {3.942293854428272*^9, 3.9422938666084013`*^9}, {
    3.9422966710719395`*^9, 3.9422966716938334`*^9}, {3.9422968949892783`*^9, 
-   3.942296919616228*^9}, 
-   3.942296986943802*^9},ExpressionUUID->"765593fd-967a-4ac9-816c-\
+   3.942296919616228*^9}, 3.942296986943802*^9, 3.942315313348444*^9, {
+   3.9423168602147884`*^9, 
+   3.9423168607958136`*^9}},ExpressionUUID->"765593fd-967a-4ac9-816c-\
 627974619140"]
 },
 WindowSize->{1280, 652},
@@ -400,9 +456,9 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 552, 14, 49, "Input",ExpressionUUID->"2ca56bb1-cd72-49ad-9c41-c22cfb1a5746"],
-Cell[1113, 36, 6904, 165, 547, "Input",ExpressionUUID->"bf3d243c-7c0e-4bf4-ae4e-247cf65efe9d"],
-Cell[8020, 203, 991, 31, 143, "Input",ExpressionUUID->"7df45ef7-7d3e-458e-9aaa-737983bfe292"],
-Cell[9014, 236, 6088, 146, 676, "Input",ExpressionUUID->"765593fd-967a-4ac9-816c-627974619140"]
+Cell[1113, 36, 6905, 169, 398, "Input",ExpressionUUID->"bf3d243c-7c0e-4bf4-ae4e-247cf65efe9d"],
+Cell[8021, 207, 3495, 81, 200, "Input",ExpressionUUID->"7df45ef7-7d3e-458e-9aaa-737983bfe292"],
+Cell[11519, 290, 6170, 148, 676, "Input",ExpressionUUID->"765593fd-967a-4ac9-816c-627974619140"]
 }
 ]
 *)
